@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thus Group - Simple Apps</title>
+    <link rel="stylesheet" href="./dist/css/styles.css">
+</head>
+<body>
+    <nav class="p-4 text-2xl flex justify-between md:p-8">
+        <div class="">
+            <span>Thus</span>
+            <span>Group</span>
+        </div>
+        <div>
+            <svg class="w-8 md:hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+        </div>
+        <div class="hidden md:flex  gap-12">
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#apps">Apps</a>
+            <a class="nav-link" href="#contact">Contacts</a>
+        </div>
+    </nav>
+    <main class="p-4 md:p-8">
+        <section class="h-screen" id="about">
+            <h1>What is this about</h1>
+            <p>Just to share with some apps, i made for fun.</p>
+            <p>Feel free to use them in all your needs.</p>
+            <span>Patrick de Logbaba</span>
+        </section>
+        <section id="apps" class="mb-12 flex flex-col items-center gap-4 md:grid md:grid-cols-2 lg:grid-cols-3">
+            <div class="app-card">
+                <h2 class="app-title">Consommation de carburant</h2>
+                <p class="app-description">Description of the app</p>
+                <a class="btn" href="./apps/consocarburant.html">Go to the App</a>
+            </div>
+            <div class="app-card">
+                <h2 class="app-title">Second App</h2>
+                <p class="app-description">Description of the app</p>
+                <a class="btn" href="#">Go to the App</a>
+            </div>
+            <div class="app-card">
+                <h2 class="app-title">Third App</h2>
+                <p class="app-description">Description of the app</p>
+                <a class="btn" href="#">Go to the App</a>
+            </div>
+        </section>
+        <footer class="text-center">
+            <h5>Made with <span><svg class="w-6 inline align-text-bottom" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path></svg></span> by <a href="#">Thus Group</a> - August 2022 </h5>
+        </footer>
+    </main>
+
+    <script src="./dist/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consommation Carburant</title>
+    <link rel="stylesheet" href="../dist/css/styles.css">
+</head>
+<body>
+    <nav class="p-4 text-2xl flex justify-between md:p-8">
+        <div class="">
+            <span>Thus</span>
+            <span>Group</span>
+        </div>
+        <div class="md:flex  gap-12">
+            <a class="nav-link" href="../index.html">Back to Homepage</a>
+        </div>
+    </nav>
+    <main class="p-4 md:p-8">
+        <h1>Consommation de Carburant</h1>
+
+        <hr>
+        <h2>Données précédentes</h2>
+        <div>Prix du carburant (FCFA):</div>
+        <div id="prix" class="text-xl font-bold bg-slate-300"></div>
+        <div>Ancien kilométrage (kms):</div>
+        <div id="kilometrage" class="text-xl font-bold"></div>
+        <div>Volume recharge (litres):</div>
+        <div id="recharge" class="text-xl font-bold"></div>
+        <form id="conso" class="conso-form" action="">
+            <label for="val_carburant">Valeur carburant au litre :</label>
+            <input class="input" type="text" name="val_carburant">
+            <label for="kilom_actuel">Kilométrage actuel :</label>
+            <input class="input" type="text" name="kilom_actuel">
+            <label for="vol_carburant">Volume de recharge :</label>
+            <input class="input" type="text" name="vol_carburant">
+            <input id="btn-calc-conso" class="btn hover:cursor-pointer" type="submit" value="Valider les données">
+        </form>
+        <div class="result">
+            <p>Vous avez parcouru <span></span> kms depuis votre dernière recharge de <span></span> litres.</p>
+            <p class="message"></p> 
+        </div>
+    </main>
+
+    <script src="../dist/js/conso.js"></script>
+</body>
+</html>
