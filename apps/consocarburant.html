@@ -30,15 +30,15 @@
         <div id="recharge" class="text-xl font-bold"></div>
         <form id="conso" class="conso-form" action="">
             <label for="val_carburant">Valeur carburant au litre :</label>
-            <input class="input" type="text" name="val_carburant">
+            <input class="input" type="number" name="val_carburant" min="1" required>
             <label for="kilom_actuel">Kilométrage actuel :</label>
-            <input class="input" type="text" name="kilom_actuel">
+            <input class="input" type="number" name="kilom_actuel" min="1" required>
             <label for="vol_carburant">Volume de recharge :</label>
-            <input class="input" type="text" name="vol_carburant">
+            <input class="input" type="number" name="vol_carburant" min="1" required>
             <input id="btn-calc-conso" class="btn hover:cursor-pointer" type="submit" value="Valider les données">
         </form>
         <div class="result">
-            <p>Vous avez parcouru <span></span> kms depuis votre dernière recharge de <span></span> litres.</p>
+            <p>Vous avez parcouru <span id="distance"></span> kms depuis votre dernière recharge de <span id="recharge_span"></span> litres.</p>
             <p class="message"></p> 
         </div>
     </main>
